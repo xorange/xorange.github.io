@@ -22,13 +22,13 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/07/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2021/11/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/2020/07/">
+<link rel="canonical" href="http://yoursite.com/archives/2021/11/">
 
 
 <script id="page-configurations">
@@ -148,12 +148,12 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">Um..! 1 post. Keep on posting.</span>
+        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
       </div>
 
       
     <div class="collection-year">
-      <span class="collection-header">2020</span>
+      <span class="collection-header">2021</span>
     </div>
 
   <article itemscope itemtype="http://schema.org/Article">
@@ -161,15 +161,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2020-07-03T12:58:51+08:00"
-              content="2020-07-03">
-          07-03
+              datetime="2021-11-02T10:05:52+08:00"
+              content="2021-11-02">
+          11-02
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2020/07/03/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
+          <a class="post-title-link" href="/2021/11/02/matplotlib-intro/" itemprop="url">
+            <span itemprop="name">Matplotlib 一文上手</span>
           </a>
       </div>
 
@@ -248,7 +248,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -276,7 +276,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -330,6 +330,19 @@
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
   
