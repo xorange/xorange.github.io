@@ -145,6 +145,84 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/11/25/use-ide/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Oliver Z.Q. Xu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/11/25/use-ide/" class="post-title-link" itemprop="url">use-ide</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-11-25 10:52:11 / Modified: 10:53:05" itemprop="dateCreated datePublished" datetime="2021-11-25T10:52:11+08:00">2021-11-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Use-an-IDE"><a href="#Use-an-IDE" class="headerlink" title="Use an IDE ?"></a>Use an IDE ?</h1><p>写代码究竟是用文本编辑器好还是用 IDE 好？工作多年，已经很少听到有人争论了，但是在学生时代这话题还是很热门的，当时常看到有人讨论得乐此不疲，这当中也离不开自己跃跃欲试地想参与其中的兴致。</p>
+<p>为什么有人推荐用 IDE？代码补全、符号跳转，这两个功能对初学者来说都是杀手锏，即使记不住接口长啥样、实现在哪里，写起代码来也能按自己思路流畅地展开。如果再提起 IDE 的 debug 断点、内存分析等等，那更不用犹豫了，想不用 IDE 都想不出理由。</p>
+<p>那怎么有人推荐用文本编辑器？简单，大神都用这个，那能差吗？IDE 的功能，文本编辑器配上插件都能实现，插件实现不了的也肯定有 linux 工具——本来也是现有 linux 工具，再有 IDE 这些内置功能的嘛。再者，文本编辑器操作起来多炫酷啊，运行又快。以更炫酷的方式，用更快的工具，还能显得自己特有见识和能力，在这过程中也确实能接触、学习到很多新东西，这难道还需要别的理由吗。</p>
+<p>乍看上去，像是公说公有理、婆说婆有理。</p>
+<p>为啥现在我又提起这个讨论了呢？是因为最近在闫令琪大神的 Games101 课上，忽然又看到了这个内容。课程的家庭作业中包含了一些既定的代码框架，学生们只需要在框架内写二十行不到的代码就能完成一道题目。闫老师特意跟大家说，“请使用 IDE，千万别不使用”，而且不要用sublime text、notepad++、vi/vim、emacs这种文本编辑器。他说，“在学校里、学习期间，用文本编辑器开发程序以锻炼自己的技能，这是 OK 的，但是开发大型的工程，完全没有必要……使用 IDE 能够大幅提高我们的开发效率，为什么不去用呢？……而且 vi/vim、emacs 它们自己本来就要‘打架’了，我们为啥还得去纠结用它们呢？”，还有句话很有趣，“（大家）要了解，geek，是 genius + freak，我们要多学习其中 genius 的部分，不要去学 freak 的部分……“，有时坚持用文本编辑器可能是一种怪癖，去学习这个毫无必要。</p>
+<p>我完全赞同闫老师的说法，没有任何反论辩驳的意图。我是担心可能闫老师的这个观点没有得到充分的说明，有些读者可能还没完全体会到，所以才写下本文，再详细说说。</p>
+<p>IDE 好用吗？好用。能提升编程效率吗？能。但不用 IDE 能学到更多技术吗？能。这几个问题似乎又回到了大家争论的原点，说该用的有该用的理，说不该用的也有不用的缘由，但其实各自说的，都不在一个内容上。真正的区别是，在不同的编程水平，不同的开发目标，不同的 code base 上，有截然不同的回答。</p>
+<p>在学习的时候。我们那时的编程水平还待提高，开发的目标本身就是学习，也不是一上来就在成熟的生产性工程化代码上工作，因此，鼓励使用文本编辑器 + 插件 + 各类工具进行开发，code base 小而简单，复杂度可控，又能在此基础上好好推敲每个环节涉及到的技术细节。这样确实能学到很多干货，所以推荐这种方式。也就是说，“以锻炼为目的鼓励使用文本编辑器，确实是OK的”。</p>
+<p>在闫老师的课程上，首先就要求学生得具备编程的能力，换言之大家并不是新手，其次，编程只是一种手段，目标是学会图形学课程的内容，最后，作业本身具有了它自身特定的开发框架，学生撰写的代码，是在这个框架内借用它的功能实现的。在这种条件下，如果再去坚持一定要使用文本编辑器来开发，那恐怕是有点怪癖的嫌疑了。代码框架是作业独有的，完全去学习它、掌握它，是没有必要的成本，对学生来说，重要的是掌握其中的概念以及各部分之间的联系，而不是去把接口函数的拼写背诵下来，即使是使用插件来配置，恐怕也总得费那么点功夫，而在这上面哪怕花一分功夫，都是“完全没有必要”的。直接用 IDE 开箱即用地打开工程，直接写作业内容，验证自己对图形学课程的理解，就达到目的了。其余的东西，可以在其他方向、其他任务上再继续展开，但没有必要在作业的工程上死磕。</p>
+<p>再展开说，在其他工程上，应该用文本编辑器还是用 IDE ？对于成熟的软件工程师来说，这只是个因目的而不同的选择题罢了。紧急的，抑或是快速迭代的任务，总之是要快速看到成果的，那么直接用 IDE 就好了，即使是不急着看到成果的，但如果我对过程并不关心，那么也直接用 IDE 就行。但同样的 code base，如果我需要仔细推敲，琢磨其中的部件、原理和设计模式，需要对比其他框架，以及最终可能为了我的需求作重构，那么此时，虽说 IDE 也能够满足使用，但归根结底还是看个人的使用习惯。如果很熟悉 IDE（而且 IDE 也可以添加很多功能强大的插件），那用 IDE 也无妨，如果虽然不抗拒 IDE 但还是文本编辑器来得更趁手，也可以用后者。</p>
+<p>总之，总是纠结该用哪个，说明还停留在初级的编程学徒的阶段，而意识到两者其实都是工具，“因地制宜”地灵活使用，这是到了成熟的软件工程师的阶段。而用着 IDE 却能看到每个功能背后对应是在做什么，用着文本编辑器又能知道 IDE 中是怎样封装提供这样功能，这样就是高手的阶段了，高手哪天开发了个 IDE 插件，或者发布了文本编辑器的插件，也不足为奇。</p>
+<p>用武功来打比方，入门弟子可能会争论练剑该用真剑还是木剑。而三师兄告诉他们，出门在外自然用真剑，练习时用木剑也无妨。大师兄在旁说，我用木剑也能杀人，用真剑也能跟你们的木剑过招。最后师傅说，不管什么剑，跟我手里这根树枝比起来，也不过如是。大概是这个道理吧。</p>
+<p>So the lesson learnt at the end:</p>
+<ol>
+<li>Always remember your goal, and commit to it. （用 IDE，快准狠）</li>
+<li>Love what you do, and love is insane. （Insane enough to 用文本编辑器）</li>
+<li>Getting things done may even make you hate them. （该用 IDE 还得用）</li>
+<li>Love never let go. （真的热爱编程，还是放不开文本编辑器，愿意去折腾）</li>
+<li>Love rationally, and passionately. （成熟的热情不是盲目，而是理性 + 稳定地热烈）</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/11/18/specific-knowlege/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -756,7 +834,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
